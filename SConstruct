@@ -16,7 +16,7 @@ if not env.GetOption('clean'):
     conf = Configure(env)
 
     # Flags we want anyway
-    conf.env.Append(CCFLAGS = "-Wall -Werror -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -I../sqlpp11/include -I../sqlpp11-connector-postgresql/include")
+    conf.env.Append(CCFLAGS = "-Wall -Werror -std=c++11 -fvisibility=hidden -fvisibility-inlines-hidden -I../sqlpp11/include -I../sqlpp11-connector-postgresql/include -I/usr/local/include")
 
     # Coverage reporting
     if ARGUMENTS.get('coverage', 0):
