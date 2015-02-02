@@ -42,5 +42,5 @@ Export('env')
 objs = []
 objs.append(env.SConscript(['src/SConscript']))
 
-sqlpppostgresql = env.SharedLibrary(target='sqlpp-postgresql', source=objs)
+sqlpppostgresql = env.StaticLibrary(target='sqlpp-postgresql', source=objs)
 
