@@ -41,6 +41,7 @@ types = {
     # For now keep this a varchar
     'time without time zone': 'varchar',
     'timestamp without time zone': 'varchar',
+    'timestamp with time zone': 'varchar',
 }
 
 # Connect to the database and fetch information from the information_schema
