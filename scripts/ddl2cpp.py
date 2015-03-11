@@ -33,15 +33,21 @@ types = {
     'char': 'char_',
     'varchar': 'varchar',
     'character varying': 'varchar',
+    'character' : 'varchar',
     'text': 'text',
     'bool': 'boolean',
+    'boolean': 'boolean',
     'double': 'floating_point',
+    'double precision' : 'floating_point',
     'float': 'floating_point',
 
     # For now keep this a varchar
     'time without time zone': 'varchar',
     'timestamp without time zone': 'varchar',
     'timestamp with time zone': 'varchar',
+    'json' : 'varchar',
+    'bson' : 'varchar',
+    'numeric' : 'varchar',
 }
 
 # Connect to the database and fetch information from the information_schema
