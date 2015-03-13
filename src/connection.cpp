@@ -319,6 +319,10 @@ namespace sqlpp {
 			PQclear(res);
 			return std::stoi(in);
 		}
+
+		::PGconn* connection::native_handle() {
+			return _handle->postgres;
+		}
 	}
 }
 
